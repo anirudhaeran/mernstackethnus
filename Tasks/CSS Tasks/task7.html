@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-group {
+        color: white;
+        padding: 10px;
+        display: flex;
+      }
+      .container {
+        background-color: #a22b55;
+      }
+      .form-group label {
+        padding-left: 40px;
+      }
+      form {
+        background-color: #75203f;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .form-group label {
+        flex-basis: 30%;
+        text-align: left;
+        margin-right: 10px;
+      }
+      .form-group input,
+      .form-group select,
+      textarea {
+        flex-basis: 45%;
+        padding: 5px;
+      }
+      input[type="radio"] {
+        margin-left: 20px;
+      }
+
+      .gender-group {
+        display: flex;
+        align-items: center;
+      }
+
+      .gender-group label {
+        margin-right: 10px;
+      }
+
+      .gender-group input[type="radio"] {
+        margin: 0 5px 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #a22b55; width: 50%; margin: auto">
+      <div
+        class="container"
+        style="margin: auto; padding-top: 5px; padding-bottom: 30px; width: 80%"
+      >
+        <form action="#" style="padding-right: 20px; padding-top: 30px">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password id=" password />
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone Number:</label>
+            <input type="text" name="Phone" id="Phone" />
+          </div>
+          <div class="form-group gender-group">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+          <div class="form-group">
+            <label for="language">Language:</label>
+            <select name="language" id="language" required>
+              <option value="">Select Language</option>
+              <option value="English">English</option>
+              <option value="French">French</option>
+              <option value="german">German</option>
+              <option value="Tamil">Tamil</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code:</label>
+            <input type="text" name="zip" id="zip" />
+          </div>
+          <div class="form-group">
+            <label for="about">About:</label>
+            <textarea
+              name="about"
+              id="about"
+              placeholder="Write about yourself"
+            ></textarea>
+          </div>
+          <div class="button" style="padding-left: 140px; padding-top: 20px">
+            <button
+              type="submit"
+              class="btn button"
+              style="
+                width: 70%;
+                height: 50px;
+                border-radius: 10px;
+                font-size: large;
+                font-weight: bold;
+              "
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

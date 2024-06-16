@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        background-color: aqua;
+        border: 1px solid black;
+        width: 75%;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 13px;
+      }
+      table,
+      td,
+      th,
+      tr {
+        border: 1px solid black;
+        border-radius: 13px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .section {
+        flex: 1;
+        padding: 20px;
+        margin-right: 180px;
+        margin-top: 50px;
+        margin-left: 180px;
+        text-align: center;
+        border: 5px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+
+    <div class="container">
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 5px;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 10px;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 15px;
+        "
+      ></div>
+    </div>
+    <div class="container">
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 10px;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 0px;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 25px;
+        "
+      ></div>
+    </div>
+
+    <div class="container">
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 50%;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-radius: 6px;
+        "
+      ></div>
+      <div
+        class="section"
+        style="
+          width: 100px;
+          height: 70px;
+          box-sizing: border-box;
+          border-top-right-radius: 15px;
+          border-bottom-left-radius: 30px;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
