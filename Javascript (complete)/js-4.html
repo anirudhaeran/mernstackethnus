@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="text-center m-4">Click here for the Date and Time</h1>
+      <div class="text-center">
+        <button class="btn btn-danger" onclick="date1()">Click me</button>
+      </div>
+      <p id="show-date-time" class="text-center m-3"></p>
+    </div>
+    <script>
+      //   for (let i = 0; i <= 5; i++) {
+      //     console.log(i);
+      //   }
+      //   let i = 0;
+      //   while (i < 4) {
+      //     console.log(i);
+      //     i++;
+      //   }
+
+      //   const obj1 = { name: "Anirudh", age: 20, place: "Kannur" };
+      //   console.log(obj1);
+      //   console.log(obj1.name);
+      //   console.log(obj1["age"]);
+
+      //   for (let a in obj1) {
+      //     console.log(obj1[a]);
+      //   }
+
+      //function to display the date
+      const date1 = () => {
+        obj = new Date();
+        document.getElementById("show-date-time").innerHTML = obj;
+      };
+    </script>
+  </body>
+</html>
